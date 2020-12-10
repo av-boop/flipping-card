@@ -1,0 +1,120 @@
+body{
+
+ // background-color:#fff ;
+}
+
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height: 350px;
+  perspective: 1000px;
+  margin: auto;
+  position: relative;
+  top: 100px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  background-color: #03506f;
+  //background-color:#393e46;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #03506f;
+  color: #fff;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.image {
+}
+
+.icons {
+  width: 40px;
+  height: 160px;
+
+  position: relative;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  top: -30px;
+}
+
+.home {
+  position: relative;
+  top: 90px;
+  color: yellow;
+}
+
+.mail {
+  position: relative;
+  top: 60px;
+  color: yellow;
+}
+
+.phone {
+  position: relative;
+  top: 30px;
+  color: yellow;
+}
+
+.contact {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+}
+
+.info {
+  width: 100%;
+  height: 180px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.phone_info {
+  position: relative;
+  top: -20px;
+  left: -60px;
+}
+
+.mail_info {
+  position: relative;
+  top: -20px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.home_info {
+  position: relative;
+  top: -12px;
+  left: -60px;
+}
